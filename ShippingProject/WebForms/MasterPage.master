@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPage" CodeBehind="MasterPage.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title>Carrot Cruise</title>
+
+     <link href="~/resources/css/Styles.css" rel="stylesheet" type="text/css" />   
+     <link href="~/resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">    
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .style1
+        {
+            border-style: solid;
+            border-width: 1px;
+            padding-left: 1%;
+            width: 169px;           
+            height: 655px;
+        }
+        .buttonClass
+        {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+          
+            font-family: 'Roboto' ,Arial,Helvetica,sans-serif;
+            font-size: medium;
+            
+            
+          
+        }
+        .buttonClass:hover
+        {
+            border: solid 1px Black;
+            background-color: lightgreen;
+          
+        }
+        #Form1
+        {
+            height: 655px;
+        }
+        .style2
+        {
+            height: 655px;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <table style="width: 100%; height: 100%; min-width: 100px; min-height: 100px">
+        <tr>
+            <td bgcolor="#A8CBFB" class="style1" valign="top">
+                <asp:LinkButton ID="LinkButton13" runat="server" Font-Bold="True" ForeColor="#884939" Font-Underline="false"
+                    OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+                <br />
+                <br />
+                <br />
+                <asp:LinkButton ID="btnAddAgent" runat="server" CssClass="buttonClass" Font-Underline="false"
+                    Font-Bold="True" OnClick="btnAddAgent_Click" ForeColor="#333333">CREATE AGENT</asp:LinkButton>
+                <br />
+                <br />
+                <asp:LinkButton ID="btnAddInvoice" runat="server" CssClass="buttonClass" Font-Underline="false"
+                    Font-Bold="True" OnClick="btnAddInvoice_Click" ForeColor="#333333">NEW INVOICE</asp:LinkButton>
+                <br />
+                <br />
+                <asp:LinkButton ID="btnAgentList" runat="server" CssClass="buttonClass" Font-Underline="false"
+                    Font-Bold="True" OnClick="btnAgentList_Click" ForeColor="#333333">AGENTS LIST</asp:LinkButton>
+                <br />
+                <br />
+                <asp:LinkButton ID="LinkButton4" runat="server" CssClass="buttonClass" Font-Underline="false"
+                    Font-Bold="True" OnClick="LinkButton4_Click" ForeColor="#333333">INVOICE LIST</asp:LinkButton>
+                <br />
+                <br />
+                <asp:LinkButton ID="LinkButton2" runat="server" CssClass="buttonClass" Font-Underline="false"
+                    Font-Bold="True" OnClick="LinkButton2_Click" ForeColor="#333333">TDS/GST LEDGER</asp:LinkButton>
+                <br />
+                <br />
+                 <asp:LinkButton ID="btnStatement" runat="server" CssClass="buttonClass" Font-Underline="false"
+                    Font-Bold="True" OnClick="btnStatement_Click" ForeColor="#333333">STATEMENT</asp:LinkButton>
+                <br />
+                <br />
+                 <asp:LinkButton ID="btnBackUp" runat="server" CssClass="buttonClass" Font-Underline="false"
+                 Font-Bold="True" OnClick="btnBackUp_Click" ForeColor="#333333">DATA BACKUP</asp:LinkButton>
+
+            </td>
+
+            <td bgcolor="#DDE2FB" class="style2">
+                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

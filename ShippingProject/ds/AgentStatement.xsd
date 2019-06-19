@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AgentStatement" targetNamespace="http://tempuri.org/AgentStatement.xsd" xmlns:mstns="http://tempuri.org/AgentStatement.xsd" xmlns="http://tempuri.org/AgentStatement.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AgentStatement" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AgentStatement" msprop:Generator_UserDSName="AgentStatement">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Invoice_Date" msprop:Generator_ColumnVarNameInTable="columnInvoice_Date" msprop:Generator_ColumnPropNameInRow="Invoice_Date" msprop:Generator_ColumnPropNameInTable="Invoice_DateColumn" msprop:Generator_UserColumnName="Invoice_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Departure_Date" msprop:Generator_ColumnVarNameInTable="columnDeparture_Date" msprop:Generator_ColumnPropNameInRow="Departure_Date" msprop:Generator_ColumnPropNameInTable="Departure_DateColumn" msprop:Generator_UserColumnName="Departure_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Pass_Name" msprop:Generator_ColumnVarNameInTable="columnPass_Name" msprop:Generator_ColumnPropNameInRow="Pass_Name" msprop:Generator_ColumnPropNameInTable="Pass_NameColumn" msprop:Generator_UserColumnName="Pass_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="GTotal" msprop:Generator_ColumnVarNameInTable="columnGTotal" msprop:Generator_ColumnPropNameInRow="GTotal" msprop:Generator_ColumnPropNameInTable="GTotalColumn" msprop:Generator_UserColumnName="GTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="Invoice_Number" msprop:Generator_ColumnVarNameInTable="columnInvoice_Number" msprop:Generator_ColumnPropNameInRow="Invoice_Number" msprop:Generator_ColumnPropNameInTable="Invoice_NumberColumn" msprop:Generator_UserColumnName="Invoice_Number" type="xs:string" minOccurs="0" />
+              <xs:element name="advance" msprop:Generator_ColumnVarNameInTable="columnadvance" msprop:Generator_ColumnPropNameInRow="advance" msprop:Generator_ColumnPropNameInTable="advanceColumn" msprop:Generator_UserColumnName="advance" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalINR" msprop:Generator_ColumnVarNameInTable="columnTotalINR" msprop:Generator_ColumnPropNameInRow="TotalINR" msprop:Generator_ColumnPropNameInTable="TotalINRColumn" msprop:Generator_UserColumnName="TotalINR" type="xs:string" minOccurs="0" />
+              <xs:element name="AdvanceINR" msprop:Generator_ColumnVarNameInTable="columnAdvanceINR" msprop:Generator_ColumnPropNameInRow="AdvanceINR" msprop:Generator_ColumnPropNameInTable="AdvanceINRColumn" msprop:Generator_UserColumnName="AdvanceINR" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
